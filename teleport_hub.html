@@ -50,8 +50,8 @@
 				<a-entity position='-3.5517 0.2 -1.4712' rotation='0 67.5 0' n-portal='targetSpace: faceman-space-hub'></a-entity>
 				<a-entity n-text="fontSize: 2; text:FACEMAN<br>Space Hub" position="-3.5517 0.7 -1.4712" rotation='0 67.5 0' visible></a-entity>
 			<!--Make another boundary box and load event portals-->
-			<a-entity position="10 0.3 6" rotation="0 -90 0" scale="1 1 1" n-layout-browser="url:http://altspacevr.github.io/event-portals-app/;isEnclosure:true;"></a-entity>
-			<a-entity n-text="fontSize: 4; text:Featured Events" position="10 3.4 1" rotation='0 -90 0' visible></a-entity>
+			<a-entity position="0 3.4 3.8444" rotation="0 180 0" scale="1 1 1" n-layout-browser="url:http://altspacevr.github.io/event-portals-app/;isEnclosure:true;"></a-entity>
+			<a-entity n-text="fontSize: 4; text:Featured Events" position="0 3.4 3.8444" rotation='0 180 0' visible></a-entity>
 			<!--Ending the scene--> 
 		</a-scene>
 		<script type="text/javascript">
@@ -71,7 +71,7 @@
 					portal_entity.setAttribute('position','0 0.2 -3.8444');
 					text_entity.setAttribute('n-text','fontSize: 2; text:New User<br>Info');
 					text_entity.setAttribute('rotation','0 0 0');
-					text_entity.setAttribute('position','0 0.7 3.8444');
+					text_entity.setAttribute('position','0 0.7 -3.8444');
 					document.querySelector('a-scene').appendChild(portal_entity);
 					document.querySelector('a-scene').appendChild(text_entity);
 				}
@@ -80,7 +80,7 @@
 					var text_entity = document.createElement('a-entity');
 					portal_entity.setAttribute('n-portal','targetSpace: capt-cannabis-says-poke-smot');
 					portal_entity.setAttribute('rotation','0 22.5 0');
-					portal_entity.setAttribute('position','1.4712 0.2 3.5517');
+					portal_entity.setAttribute('position','1.4712 0.2 -3.5517');
 					text_entity.setAttribute('n-text',"fontSize: 2; text:Capt. Cannabis's<br>Grow Room");
 					text_entity.setAttribute('rotation','0 22.5 0');
 					text_entity.setAttribute('position','1.4712 0.7 -3.5517');
