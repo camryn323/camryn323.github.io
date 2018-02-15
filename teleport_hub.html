@@ -37,6 +37,9 @@
 			<!--Toy House-->
 				<a-entity position='-3.5517 0.2 1.4712' rotation='0 112.5 0' n-portal='targetSpace: event-862654090620961312'></a-entity>
 				<a-entity n-text="fontSize: 2; text:Toy House" position="-3.5517 0.7 1.4712" rotation='0 112.5 0' visible></a-entity>
+			<!--Toy House-->
+				<a-entity position='0 0.2 -3.8444' rotation='0 0 0' n-portal='targetSpace: event-862654090620961312'></a-entity>
+				<a-entity n-text="fontSize: 2; text:Toy House" position="0 0.7 3.8444" rotation='0 0 0' visible></a-entity>
 			<!--Reggie's Octo Space 2-->
 				<a-entity position='3.8444 0.2 0' rotation='0 270 0' n-portal='targetSpace: experience-space-614783891072352897'></a-entity>
 				<a-entity n-text="fontSize: 2; text:Reggie's Octo<br>Space 2" position="3.8444 0.7 0" rotation='0 270 0' visible></a-entity>
@@ -68,10 +71,10 @@
 					var text_entity = document.createElement('a-entity');
 					portal_entity.setAttribute('n-portal','targetSpace: new-user-info');
 					portal_entity.setAttribute('rotation','0 0 0');
-					portal_entity.setAttribute('position','0 0.2 -5.8444');
+					portal_entity.setAttribute('position','-1.4712 0.2 -5.5517');
 					text_entity.setAttribute('n-text','fontSize: 2; text:New User<br>Info');
 					text_entity.setAttribute('rotation','0 0 0');
-					text_entity.setAttribute('position','0 0.7 -5.8444');
+					text_entity.setAttribute('position','-1.4712 0.7 -5.5517');
 					document.querySelector('a-scene').appendChild(portal_entity);
 					document.querySelector('a-scene').appendChild(text_entity);
 				}
